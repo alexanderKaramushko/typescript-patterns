@@ -1,9 +1,8 @@
+import { BalletFlat, Boot, Sneaker } from '.';
+
 /**
  * @description Create overload for abstract fabric to make it more specific.
  */
-
-import { BalletFlat, Boot, Sneaker } from '.';
-
 type Shoe = {
   create(type: 'balletFlat'): BalletFlat | null;
   create(type: 'boot'): Boot | null;
